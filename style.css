@@ -8,11 +8,11 @@ body {
 }
 
 header {
-  height: 208px;
-  width: 550px;
+  height: 13em;
+  width: 34.375em;
   background-image: url(images/40637dd9b0240098474b6d8dd9487d8c.png);
   background-size: cover;
-  background-position-y: 723px;
+  background-position-y: 45.188em;
   position: relative;
 }
 .content {
@@ -26,29 +26,29 @@ header {
 .content h1 {
   margin: 0;
 
-  font-size: 43px;
+  font-size: 2.688rem;
   font-weight: 800;
-  line-height: 24px;
+  line-height: 1.5rem;
   letter-spacing: -0.045em;
 }
 
 .content p {
   margin: 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 1.25rem;
   letter-spacing: 0em;
 }
 .search-bar {
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 189px;
-  left: 44px;
+  top: 11.813em;
+  left: 5em;
 }
 .search-bar input {
-  height: 38px;
-  width: 342px;
+  height: 2.375em;
+  width: 21.375em;
 
   background: #2e2e2f;
   color: #a5a5a5;
@@ -58,7 +58,7 @@ header {
   border-radius: 6px 0 0 6px;
 }
 .search-bar button {
-  width: 120px;
+  width: 7.5em;
 
   color: #ffffff;
   border: none;
@@ -66,8 +66,8 @@ header {
   border-radius: 0 6px 6px 0;
 }
 .search-bar img {
-  height: 16px;
-  width: 16px;
+  height: 1em;
+  width: 1em;
   position: absolute;
   top: 11px;
   left: 15px;
@@ -77,6 +77,7 @@ header {
   margin: 0;
   padding: 44px 42px 0 42px;
   box-sizing: border-box;
+  margin: auto;
 }
 .discription {
   width: 462px;
@@ -93,32 +94,31 @@ header {
 }
 
 .watchlist img {
-  height: 16px;
-  width: 16px;
+  height: 1em;
+  width: 1em;
 }
 
 .discription-heading {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0em;
 }
 .info {
   display: flex;
-  gap: 18px;
-  font-size: 12px;
+  gap: 1.125em;
+  font-size: 0.75rem;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1.25rem;
   letter-spacing: 0em;
-  text-align: left;
 }
 .discription-text {
   font-family: Inter;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1.25rem;
   letter-spacing: 0em;
-  text-align: left;
+
   color: #a5a5a5;
 }
 .discription-text,
@@ -134,20 +134,20 @@ header {
   gap: 4px;
 }
 .disc-heading-container img {
-  height: 12px;
-  width: 12px;
-  left: 283px;
-  top: 289px;
+  height: 0.75em;
+  width: 0.75em;
+  left: 17.688em;
+  top: 18.063em;
   border-radius: 0.7499999403953552px;
 }
 .disc-heading-container p {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1.25rem;
 }
 hr {
   border: 1.5px solid #2c2c2c;
-  margin-top: 22px;
+  margin-top: 1.375em;
 }
 
 .watchlist {
@@ -156,14 +156,14 @@ hr {
   gap: 9px;
 }
 .errorMsg {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 20px1.25rem;
   letter-spacing: 0em;
   text-align: center;
   color: #787878;
   line-height: 92%;
-  padding: 0 78px;
+  padding: 0 4.875em;
 }
 .hidden {
   display: none;
@@ -179,14 +179,14 @@ hr {
   color: yellow;
 }
 .start-exploring-para {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 1.25rem;
   color: #2e2e2f;
 }
 .start-exploring-img {
-  height: 61px;
-  width: 70px;
+  height: 3.813em;
+  width: 4.375em;
 
   border-radius: 0px;
 }
@@ -194,8 +194,14 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 9.375em;
 }
 .watchlist:hover {
   color: yellow;
+}
+
+@media (min-width: 551px) {
+  header {
+    width: 100%;
+  }
 }
