@@ -44,7 +44,9 @@ header {
   justify-content: center;
   position: absolute;
   top: 11.813em;
-  left: 5em;
+  width: 170px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 .search-bar input {
   height: 2.375em;
