@@ -87,7 +87,7 @@ function renderMovie(movie) {
 function getMovie() {
   movieDetailArr = [];
   for (let movie of movieArr) {
-    fetch(`http://www.omdbapi.com/?t=${movie.Title}&apikey=93170c26`)
+    fetch(`https://www.omdbapi.com/?t=${movie.Title}&apikey=93170c26`)
       .then((res) => res.json())
       .then((data) => {
         data.addToWatchlist = false;
@@ -101,7 +101,7 @@ function getMovie() {
 searchBtn.addEventListener("click", getMovies);
 function getMovies() {
   movieContainer.innerHTML = "";
-  fetch(`http://www.omdbapi.com/?s=${inputMovie.value}&apikey=93170c26`)
+  fetch(`https://www.omdbapi.com/?s=${inputMovie.value}&apikey=93170c26`)
     .then((res) => {
       if (!res.ok) {
         // get error message from body or default to response status
